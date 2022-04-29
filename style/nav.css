@@ -1,0 +1,40 @@
+nav >ul {
+    display: flex;
+    
+}
+li{
+    list-style:none;
+    margin:10px;
+    
+}
+li a{
+    text-decoration: none;
+    background-color: rgb(187, 115, 21);
+    padding:5px;
+    border-radius:5px;
+    
+   
+}
+li a:hover{
+    color:rgb(255, 254, 254);
+    padding:5px;
+    border-bottom:5px solid red;
+    
+}
+.dropdown{
+    display:none;
+    position:absolute;
+    margin:0;
+    padding:0;
+    
+}
+nav > ul > li:hover > ul{
+    display:block;
+    margin:0;
+    padding:0;
+    background-color:rebeccapurple ;
+}
+.dropdown2{
+    display:none;
+    position:absolute;
+}

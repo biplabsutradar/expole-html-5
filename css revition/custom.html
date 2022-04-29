@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>custom css</title>
+    <style>
+        :root{
+            --side-width:200px;
+            --color:red;
+            --background-color:darkblue;
+            --dark-border:1px solid black;
+            --main-color:white;
+            --big-font-weight:200px;
+        }
+        h1{
+            color:var(--color);
+        }
+        p{
+            color: cadetblue;
+        }
+        h3{
+            background-color: cadetblue;
+            color:var(--main-color);
+        }
+        h6{
+            color: cadetblue;
+            font-weight: var(--big-font-weight);
+            border:var(--dark-border)
+            
+        }
+    footer{
+        clear:both;
+    }
+        .aside,.blogs{
+            float: left;
+           
+        }
+        .aside{
+            background-color:antiquewhite;
+            width:var(--side-width);
+        }
+        .blogs{
+            
+            background-color:darkblue;
+            color:white;
+            width: calc(100% - 2*var(--side-width));
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>i am exploring custom propertes</h1>
+        <p>welcome to my web site</p>
+    </header>
+    <main>
+     <h3>i want to web developer</h3>
+     <section>
+        <aside class="aside">
+        <h4>we are make a new website</h4>
+    </aside>
+    <div class="blogs">
+        <p>blog</p>
+    </div>
+    </section>
+    </main>
+    <footer>
+        <h6>don't copyright for evry content if do the copy content</6>
+        <p><small>copy right</small></p>
+        
+    </footer>
+</body>
+</html>
